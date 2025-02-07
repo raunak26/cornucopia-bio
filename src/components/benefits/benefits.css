@@ -1,0 +1,77 @@
+.benefits {
+    color: #fff;
+    margin: 4%;
+    margin-top: 15vh;
+}
+
+.benefits h2{
+    font-size: 2rem;
+}
+
+.benefits p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button-container{
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+}
+
+.button-container-subset, .button-container{
+    display: flex;
+}
+
+.dialog-button {
+    background-color: #205EA3;
+    color: #fff;
+    cursor: pointer;
+    display: inline;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    text-align: center;
+    padding-top: 5.5vw;
+    height: 17vw;
+    width: 17vw;
+    margin: 2vw;
+    border-radius: 10%;
+}
+
+dialog-button img{
+    width: 4vw;
+    margin: auto;
+}
+
+.dialog-button p{
+    font-size: 1vw;
+}
+
+.dialog {
+    /* display: none; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    color: #205EA3;
+    border: #205EA3;
+    border-style: solid;
+    padding: 20px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
+    z-index: 1000;
+}
+
+.dialog h2 {
+    margin-top: 0;
+}
+
+.dialog button {
+    background-color: #205EA3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}

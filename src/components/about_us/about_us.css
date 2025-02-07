@@ -1,0 +1,61 @@
+.about_us {
+    margin: 4%;
+    margin-top: 15vh;
+    color: #205EA3;
+}
+
+.about_us h2{
+    font-size: 2rem;
+}
+
+.about_us p{
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    /* border-style: solid; */
+    /* border-color: #141414; */
+    /* border-bottom-color: #205EA3; */
+}
+
+.green {
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+    /* border-style: solid; */
+    /* border-color: #205EA3; */
+}
+
+.team {
+    margin-top: 2rem;
+    display: flex;
+}
+
+.member {
+    color: black;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.member h4{
+    font-size: 1.5rem;
+}
+
+.member h6{
+    font-size: 1rem;
+}
+
+.member img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#raunak {
+    margin-right: 5%;
+}
+
+#mickey {
+    margin-left: 5%;
+}
