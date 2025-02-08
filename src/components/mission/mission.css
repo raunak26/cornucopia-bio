@@ -1,78 +1,117 @@
-.main {
-    background: rgb(255,255,255);
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(173,196,221,1) 10%, rgba(137,170,206,1) 18%, rgba(94,139,189,1) 30%, rgba(46,104,169,1) 50%, rgba(94,139,189,1) 78%, rgba(179,200,224,1) 93%, rgba(255,255,255,1) 100%);
-    color: #fff;
-    /* margin-top: 12vh; */
-    padding: 0 10%;
-    padding-top: 30vh;
-    padding-bottom: 30vh;
-}
+/* mission.css */
 
-.mission, .challenges, .solution, .cta {
-    margin: 3rem 0;
+/* Layout container */
+.mission-container {
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
-}
-
-.mission h2, .challenges h3, .solution h3, .cta h3 {
-    font-size: 2.5rem;
-    /* color: #205EA3; */
+    font-family: 'Inter', sans-serif; /* or your preferred font */
+    color: #333;
+  }
+  
+  /* Hero / Intro */
+  .mission-hero {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .mission-hero h1 {
+    font-size: 2.2rem;
+    color: #205EA3;
     margin-bottom: 1rem;
-    text-align: center;
-}
-
-.mission p {
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 1rem 0;
-    /* color: #ccc; */
-}
-
-.challenge-item, .solution-item {
-    margin: 2rem 0;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
-    box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.15);
-}
-
-.challenge-item h4, .solution-item h4 {
-    font-size: 1.8rem;
-    /* color: #205EA3; */
-    margin-bottom: 0.5rem;
-}
-
-.challenge-item p, .solution-item p {
+  }
+  
+  .mission-hero p {
     font-size: 1.1rem;
-    line-height: 1.8;
-    /* color: #eee; */
-}
-
-.cta {
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Main content section */
+  .mission-content {
+    margin-bottom: 3rem;
+  }
+  
+  .mission-text-block {
+    margin-bottom: 2rem;
+  }
+  
+  .mission-text-block h2 {
+    font-size: 1.5rem;
+    color: #205EA3;
+    margin-bottom: 0.75rem;
+  }
+  
+  .mission-text-block p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  /* Paper snippet styling */
+  .snippet-block {
+    background: #fafafa;
+    border-left: 4px solid #205EA3;
+    padding: 1rem 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .paper-quote {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+  }
+  
+  /* Call to Action */
+  .mission-cta {
     text-align: center;
-}
-
-.cta p {
-    font-size: 1.3rem;
-    margin-bottom: 1.5rem;
-    /* color: #ccc; */
-}
-
-.cta-button {
-    padding: 0.8rem 2rem;
-    /* background-color: #205EA3; */
-    /* color: #141414; */
-    font-size: 1.2rem;
-    font-weight: 600;
+    background: #f7f7f7;
+    padding: 2rem;
     border-radius: 4px;
+  }
+  
+  .mission-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #205EA3;
+  }
+  
+  .mission-cta p {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0.5rem auto 2rem;
+    color: #555;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    display: inline-block;
+    background: #205EA3;
+    color: #fff;
     text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.cta-button:hover {
-    background-color: #fff;
-    color: #000;
-}
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 1.4rem;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: #003366;
+  }
+  
+  /* Basic Responsive Tweaks */
+  @media (max-width: 768px) {
+    .mission-hero h1 {
+      font-size: 1.8rem;
+    }
+    .mission-hero p,
+    .mission-text-block p,
+    .mission-cta p {
+      font-size: 0.95rem;
+    }
+  }
+  

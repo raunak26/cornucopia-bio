@@ -1,33 +1,33 @@
+/* 
+  Example: Use a rounder font like Poppins. 
+  If you're importing it globally in index.html or another file, 
+  you can remove this import and just apply font-family below.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Main App Container */
 .App {
-  text-align: center;
+  font-family: 'Poppins', sans-serif;  /* Rounder, friendlier font */
+  text-align: left;
+  min-height: 100vh;
+  overflow-y: auto;
+  position: relative;
+  background: #ffffff;      /* White background for a clean look */
+  color: #333;              /* Dark gray text */
+  padding-top: 70px;        /* Prevent overlap from fixed, transparent navbar */
+  box-sizing: border-box;   /* Ensure consistent padding & border handling */
+  margin: 0;                /* Remove default margin if any */
 }
 
+/* Optional: If you still use the React logo, you can adjust its size/animation */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  display: block;
+  margin: 2rem auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
+/* Keep or remove the spinning animation if desired */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +35,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* 
+  .App-header references can be removed if you're not using that 
+  default Create React App structure anymore.
+  But if you still have an <header className="App-header"> somewhere,
+  you can style it like this:
+*/
+.App-header {
+  min-height: 60vh;         /* Example: shorter than default 100vh */
+  background-color: #f2f7fa; /* Light neutral background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #205EA3;
+  padding: 2rem;
+}
+
+.App-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Example link styling if you need it */
+.App-link {
+  color: #205EA3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.App-link:hover {
+  text-decoration: underline;
 }

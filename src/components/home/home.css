@@ -1,35 +1,203 @@
-/* Restrict Particles Background to Home Component */
-.home-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Ensures particles don't spill over */
+/* 
+  1) Use a rounder font like Poppins 
+     (adjust weights as needed: 400, 500, 600...)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Reset margin & padding, apply rounder font */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* Replaces Inter with Poppins */
+  background: #fff;
+  color: #000;
+  scroll-behavior: smooth; /* optional: smoother scrolling */
 }
 
-/* Particles Canvas - Limited to Home Only */
+/* Particles.js container behind the main content */
 #particles-js {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0; /* Keeps particles behind content */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; 
 }
 
-/* Home Content */
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    color: #205EA3;
+/* 
+  ─────────────────────────────────────────────────────────
+   Hero Section 
+   - Slightly rounded container
+   - Subtle background overlay for readability
+  ─────────────────────────────────────────────────────────
+*/
+.hero-section {
+  position: relative;
+  z-index: 1; 
+  min-height: 80vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8); 
+  border-radius: 0 0 16px 16px; /* Round bottom corners if you want a 'hero card' feel */
+}
+
+.hero-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #205EA3; /* brand color */
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  max-width: 600px; 
+  line-height: 1.6;
+}
+
+/* 
+  ─────────────────────────────────────────────────────────
+   Services Section
+   - Soft background color
+   - Rounded service cards 
+  ─────────────────────────────────────────────────────────
+*/
+.services-section {
+  position: relative;
+  z-index: 1; 
+  padding: 3rem 2rem;
+  background: #f2f7fa; 
+  text-align: center;
+  border-radius: 16px; /* Round the entire services section if desired */
+  margin: 2rem auto;
+  max-width: 1200px; /* center with a max-width, optional */
+}
+
+.services-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #205EA3;
+  font-weight: 600; 
+}
+
+.services-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 12px; /* More rounded corners */
+  max-width: 300px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #205EA3;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* 
+  ─────────────────────────────────────────────────────────
+   Trusted By Section
+   - White background
+   - Horizontal scroll for logos 
+  ─────────────────────────────────────────────────────────
+*/
+.trusted-by-section {
+  position: relative;
+  z-index: 1; 
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fff;
+  margin: 2rem auto; 
+  max-width: 1200px; /* optional for centering/narrowing */
+  border-radius: 16px; /* If you want a card-like section */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+.trusted-by-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #205EA3;
+  font-weight: 600;
+}
+
+/* Horizontally scrollable logos */
+.logos-scroller {
+  overflow-x: auto;
+  overflow-y: hidden; 
+  width: 100%;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch; 
+  padding: 0.5rem 0; /* some vertical space around logos */
+}
+
+.logos-container {
+  display: inline-flex; 
+  gap: 2rem;
+  padding: 0 2rem; 
+}
+
+.trusted-logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.2s ease;
+}
+
+.trusted-logo:hover {
+  filter: grayscale(0%);
+}
+
+/* 
+  ─────────────────────────────────────────────────────────
+   Responsive Tweaks
+  ─────────────────────────────────────────────────────────
+*/
+@media (max-width: 768px) {
+  .hero-title {
     font-size: 2rem;
-    font-weight: bold;
-    position: relative;
-    z-index: 1; /* Ensures text stays above particles */
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.6); /* Light transparent background for readability */
-    /* border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  }
+  .hero-subtitle {
+    font-size: 1.4rem;
+  }
+  .services-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-card {
+    max-width: 90%;
+  }
+  .trusted-by-section h2 {
+    font-size: 1.6rem;
+  }
 }

@@ -1,56 +1,80 @@
-import './mission.css';
-import React from 'react';
+import React from "react";
+import "./mission.css";
 
-const Mission = () =>{
-	return(
-		<React.Fragment>
-            <main class="main">
-                <section class="mission">
-                    <h2>Our Mission</h2>
-                    <p>
-                        In today’s biotech landscape, scientists face an overwhelming challenge: sifting through vast amounts of experimental data, protocols, and previous research while managing parallel projects across teams and institutions. 
-                        At Cornucopia, our mission is to revolutionize this process. We aim to empower researchers by providing an AI-driven solution that transforms how knowledge is accessed, shared, and utilized in biotech research.
-                    </p>
-                </section>
+const Mission = () => {
+  return (
+    <div className="mission-container">
+      {/* Hero / Intro Section */}
+      <section className="mission-hero">
+        <h1>Our Mission</h1>
+        <p>
+          We’ve spoken with countless scientists and heard the same refrain: 
+          <strong> research is slow and demands collaboration.</strong> How can we 
+          possibly fix such a monumental challenge?
+        </p>
+      </section>
 
-                <section class="challenges">
-                    <h3>The Challenges Researchers Face</h3>
-                    <div class="challenge-item">
-                        <h4>Data Overload</h4>
-                        <p>Scientists must sift through massive amounts of experimental data, protocols, and ELNs (Electronic Lab Notebooks), slowing innovation.</p>
-                    </div>
-                    <div class="challenge-item">
-                        <h4>Redundant Efforts</h4>
-                        <p>Parallel projects in universities, companies, and research groups often lead to duplicated experiments and wasted resources.</p>
-                    </div>
-                    <div class="challenge-item">
-                        <h4>Restricted Access</h4>
-                        <p>Valuable data is siloed within teams, limiting collaboration and preventing discoveries from reaching their full potential.</p>
-                    </div>
-                </section>
+      {/* Main Content Section */}
+      <section className="mission-content">
+        {/* The Challenge */}
+        <div className="mission-text-block">
+          <h2>The Challenge</h2>
+          <p>
+            Our team has used automation to accelerate experiments, but we’ve 
+            discovered a problem: not everyone can simply purchase a 
+            Hamilton or RPA machine and magically streamline their workflow. 
+            You typically need <strong>an experienced coder</strong> or a 
+            specialist familiar with liquid handling.
+          </p>
+          <p>
+            Add to that the fact that <strong>ideation takes time</strong>, 
+            as there’s a vast amount of scientific literature to comb through 
+            before you can even start experimenting.
+          </p>
+        </div>
 
-                <section class="solution">
-                    <h3>How Cornucopia Solves These Challenges</h3>
-                    <div class="solution-item">
-                        <h4>Smart Data Querying</h4>
-                        <p>With Cornucopia’s S.A.M, researchers can easily query their protocols, drafts, previous experiments, and ELN data, saving time and enabling actionable insights.</p>
-                    </div>
-                    <div class="solution-item">
-                        <h4>Democratized Research Access</h4>
-                        <p>Cornucopia enables seamless collaboration by allowing users to share their data in a shared Knowledge Vault while maintaining control over proprietary information.</p>
-                    </div>
-                    <div class="solution-item">
-                        <h4>Customizable Access Control</h4>
-                        <p>Users can define access restrictions, share data within their organization, or keep it private, ensuring compliance with proprietary research needs.</p>
-                    </div>
-                    <div class="solution-item">
-                        <h4>Redundancy Elimination</h4>
-                        <p>By integrating data across multiple projects and teams, Cornucopia reduces redundant efforts and accelerates innovation.</p>
-                    </div>
-                </section>
-            </main>
-		</React.Fragment>
-	);
-}
+        {/* Where We Come In */}
+        <div className="mission-text-block">
+          <h2>Where We Come In</h2>
+          <p>
+            That’s where <strong>Cornucopia</strong> changes the game. 
+            We provide device integrations <em>without the need to write code</em>. 
+            Our intelligent agents handle the <em>ideation</em> by sifting 
+            through relevant literature, designing protocols, and even 
+            executing the steps on compatible lab devices. You just tell 
+            us your <strong>research goal</strong>, and our platform manages the rest.
+          </p>
+        </div>
+
+        {/* GLP-1 Paper Snippet */}
+        <div className="mission-text-block snippet-block">
+          <h2>Real-World Example: GLP-1</h2>
+          <p>
+            We’ve tested our approach on some of the hottest topics in science—like
+            <strong> GLP-1</strong>. Our agents rapidly reviewed current publications, 
+            planned experiments, and interfaced with lab devices to produce actionable 
+            results, all without requiring specialized coding skills.
+          </p>
+          <blockquote className="paper-quote">
+            “Insert snippet of our paper here...”
+          </blockquote>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="mission-cta">
+        <h2>Ready to Bring Cornucopia to Your Lab?</h2>
+        <p>
+          Get in touch to see how our agent-driven platform can revolutionize 
+          your research. Experience faster experiments, automated ideation, 
+          and seamless lab integration—no code required.
+        </p>
+        <a href="/contact" className="cta-button">
+          Get in Touch
+        </a>
+      </section>
+    </div>
+  );
+};
 
 export default Mission;
