@@ -1,0 +1,156 @@
+/* contact_us.css */
+
+/* 
+  Use a rounder font like Poppins 
+  (adjust weights as needed: 400, 500, 600...)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Container */
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif; /* Switched to Poppins */
+  color: #333;
+}
+
+/* Intro Section */
+.contact-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-intro h2 {
+  font-size: 2rem;
+  color: #205EA3; /* brand color if desired */
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+/* 
+  Main Content: 
+  2-column layout on larger screens,
+  but wraps nicely on mobile 
+*/
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Left column: contact info card */
+.contact-info {
+  flex: 1 1 250px;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px; /* larger radius for a rounder card */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-info h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #205EA3;
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info strong {
+  color: #000;
+}
+
+/* Right column: form card */
+.contact-form {
+  flex: 2 1 400px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px; /* bigger radius here too */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #205EA3;
+  font-weight: 600;
+}
+
+/* Form Labels */
+.contact-form label {
+  margin: 0.8rem 0 0.2rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Inputs and Textareas */
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* rounder corners on inputs */
+  font-size: 0.95rem;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #205EA3;
+  box-shadow: 0 0 0 2px rgba(32,94,163,0.1);
+}
+
+/* Submit Button */
+.btn-submit {
+  background: #205EA3; /* brand color */
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px; /* slightly rounder button */
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+  align-self: flex-start; /* keep button to the left */
+}
+
+.btn-submit:hover {
+  background: #003366;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1 1 auto;
+  }
+  
+  .contact-info,
+  .contact-form {
+    margin-bottom: 1.5rem;
+  }
+}
