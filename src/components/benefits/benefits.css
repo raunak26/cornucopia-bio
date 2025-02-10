@@ -154,10 +154,18 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .timeline-step {
-    min-width: 120px;
-    padding: 0.8rem;
+  .timeline-steps {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
   }
+
+  .timeline-step {
+    min-width: unset;
+    width: 100%;
+    text-align: center;
+  }
+  
   .timeline h2 {
     font-size: 1.2rem;
   }

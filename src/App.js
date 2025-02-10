@@ -6,9 +6,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/home';
 import Mission from './components/mission/mission';
 import Benefits from './components/benefits/benefits';
-import AboutUs from './components/about_us/about_us';
 import ContactUs from './components/contact_us/contact_us';
+<<<<<<< HEAD
 import Navbar from './components/Navbar/Navbar';
+=======
+import Navbar from './components/navbar/navbar';
+>>>>>>> main
 
 // AOS example
 import Aos from 'aos';
@@ -24,10 +27,6 @@ function App() {
       <Navbar />
       <div className="App">
         <Routes>
-          {/* 
-            SINGLE-PAGE for Home + Mission
-            When user goes to "/", they see Home AND Mission in one page.
-          */}
           <Route 
             path="/" 
             element={
@@ -37,16 +36,8 @@ function App() {
               </>
             }
           />
-
-          {/* MULTI-PAGE routes for the other sections */}
           <Route path="/benefits" element={<Benefits />} />
-          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
-
-          {/* 
-            OPTIONAL: A catch-all route if needed:
-            <Route path="*" element={<NotFound />} />
-          */}
         </Routes>
       </div>
     </Router>
