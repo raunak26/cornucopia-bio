@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/react"
 
 // Import your sections/pages
 import Home from './components/home/home';
@@ -37,7 +36,6 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
-      <Analytics />
     </Router>
   );
 }
