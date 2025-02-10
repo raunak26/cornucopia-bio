@@ -8,7 +8,7 @@ import Mission from './components/mission/mission';
 import Benefits from './components/benefits/benefits';
 import AboutUs from './components/about_us/about_us';
 import ContactUs from './components/contact_us/contact_us';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 
 // AOS example
 import Aos from 'aos';

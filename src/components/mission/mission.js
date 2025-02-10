@@ -38,8 +38,8 @@ const Mission = () => {
           <h2>Where We Come In</h2>
           <p>
             That’s where <strong>Cornucopia</strong> changes the game. 
-            We provide device integrations <em>without the need to write code</em>. 
-            Our intelligent agents handle the <em>ideation</em> by sifting 
+            We provide device integrations <strong>without the need to write code</strong>. 
+            Our agents handle the <em>ideation</em> by sifting 
             through relevant literature, designing protocols, and even 
             executing the steps on compatible lab devices. You just tell 
             us your <strong>research goal</strong>, and our platform manages the rest.
