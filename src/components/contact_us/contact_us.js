@@ -1,6 +1,7 @@
 import React from 'react';
 import './contact_us.css';
 
+{/* The ContactUs component */}
 const ContactUs = () => {
   return (
     <div className="contact-container">
