@@ -10,6 +10,12 @@
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "aos": "^2.3.4",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.0",
+    "nodemon": "^3.0.0",
     "particles.js": "^2.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -18,7 +24,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "NODE_OPTIONS=--openssl-legacy-provider react-scripts start",
     "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +48,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
   }
 }
