@@ -29,7 +29,7 @@ const Home = () => {
         <h1 className="hero-title">Cornucopia Bio</h1>
         <p className="hero-subtitle">0 to cure</p>
         <p className="hero-description">
-          Operate lab devices from your home without the hassle of complex setups.
+          Operate lab devices from your home without the hassle of complex setups. <br />
           Just specify your research goal, and our platform handles the rest!
         </p>
       </section>
