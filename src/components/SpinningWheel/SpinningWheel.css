@@ -9,7 +9,7 @@ section {
 
 /* Container viewport: 840px wide */
 .brandsCarousel {
-  width: 840px;
+  width: 70vw;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -18,7 +18,7 @@ section {
 
 /* The track is 1320px so all 6 big-margin logos fit */
 .carouselTrack {
-  width: 1320px;
+  width: 100vw;
   display: flex;
   animation: infiniteLoop 10s linear infinite;
 }
