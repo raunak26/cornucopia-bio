@@ -56,8 +56,11 @@ const Mission = () => {
             results, all without requiring specialized coding skills.
           </p>
           <blockquote className="paper-quote">
-            “Insert snippet of our paper here...”
+            <a href="/file.pdf" target="_blank" rel="noopener noreferrer">
+              Check out our paper on GLP-1 here
+            </a>
           </blockquote>
+
         </div>
       </section>
 

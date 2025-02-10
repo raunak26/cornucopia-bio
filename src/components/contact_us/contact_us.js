@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './contact_us.css';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001';
+const API_URL = process.env.REACT_APP_API_URL || ""; // ✅ Use environment variable for API URL
 
 const ContactUs = () => {
   // State to manage form input
@@ -29,20 +29,22 @@ const ContactUs = () => {
     setLoading(true); // Start loading when form is submitted
 
     try {
-      // Send form data to the server
+      // ✅ Use API_URL for flexible deployment
       const res = await fetch(`${API_URL}/send`, { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
-      // Handle response
-      if (res.ok) {
+      // ✅ Ensure response is JSON before parsing
+      if (!res.ok) {
+        const errorMessage = res.headers.get("Content-Type")?.includes("application/json")
+          ? (await res.json()).message
+          : "Failed to send message. Please try again.";
+        setResponseMessage(errorMessage);
+      } else {
         setResponseMessage('Your message has been sent successfully!');
         setFormData({ name: '', email: '', message: '' }); // Reset form
-      } else {
-        const errorData = await res.json();
-        setResponseMessage(errorData.message || 'Failed to send message. Please try again later.');
       }
     } catch (error) {
       setResponseMessage('An error occurred. Please try again later.');
