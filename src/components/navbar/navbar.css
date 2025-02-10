@@ -4,6 +4,11 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+/* 
+  2) Navbar Container 
+     - Slightly rounded bottom corners
+     - White background
+*/
 /* NAVBAR BASE STYLING */
 .navbar {
     font-family: 'Poppins', sans-serif;
@@ -126,7 +131,7 @@
 
     /* Show menu when active */
     .nav-links.active {
-        height: auto; /* Adjust based on content */
+        height: 120px; /* Adjust based on content */
         padding: 1rem 0;
     }
 }
