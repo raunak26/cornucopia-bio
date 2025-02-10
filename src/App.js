@@ -7,11 +7,7 @@ import Home from './components/home/home';
 import Mission from './components/mission/mission';
 import Benefits from './components/benefits/benefits';
 import ContactUs from './components/contact_us/contact_us';
-<<<<<<< HEAD
-import Navbar from './components/Navbar/Navbar';
-=======
-import Navbar from './components/navbar/navbar';
->>>>>>> main
+import Navbar from './components/Navbar/navbar';
 
 // AOS example
 import Aos from 'aos';
