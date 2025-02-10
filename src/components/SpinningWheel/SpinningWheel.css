@@ -1,0 +1,58 @@
+:root {
+  --off-white: #ffffff;
+  --light-gray: #9ca6a2;
+}
+
+section {
+  background: var(--off-white);
+}
+
+/* Container viewport: 840px wide */
+.brandsCarousel {
+  width: 70vw;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+}
+
+/* The track is 1320px so all 6 big-margin logos fit */
+.carouselTrack {
+  width: 100vw;
+  display: flex;
+  animation: infiniteLoop 10s linear infinite;
+}
+
+/* If you want the first brand flush at left, 
+   offset by -60px initially. Adjust the final to -720px. */
+@keyframes infiniteLoop {
+  0% {
+    transform: translate3d(0, 0, 0);
+    /* or translate3d(-60px, 0, 0) if you want no initial blank space */
+  }
+  100% {
+    transform: translate3d(-660px, 0, 0);
+    /* or -720px if you started at -60px */
+  }
+}
+
+/* 100px wide, 60px margin each side => 220px total per logo */
+.brandLogo {
+  width: 100px;
+  height: 50px;
+  margin: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Force all SVG paths to be gray */
+.brandLogo svg * {
+  fill: var(--light-gray) !important;
+}
+
+/* Keep aspect ratio on logos */
+.brandLogo svg {
+  width: 100px;
+  height: auto;
+}
