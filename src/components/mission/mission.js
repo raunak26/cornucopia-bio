@@ -52,11 +52,13 @@ const Mission = () => {
           <p>
             We’ve tested our approach on some of the hottest topics in science—like
             <strong> GLP-1</strong>. Our agents rapidly reviewed current publications, 
-            planned experiments, and interfaced with lab devices to produce actionable 
+            planned experiments, and ran computational experiments to produce actionable 
             results, all without requiring specialized coding skills.
           </p>
           <blockquote className="paper-quote">
-            “Insert snippet of our paper here...”
+            <a href="/file.pdf" target="_blank" rel="noopener noreferrer">
+              Check out our paper on GLP-1 here
+            </a>
           </blockquote>
         </div>
       </section>

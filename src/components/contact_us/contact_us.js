@@ -16,9 +16,8 @@ const ContactUs = () => {
         {/* Left Column: Contact Info */}
         <div className="contact-info">
           <h3>Our Info</h3>
-          <p><strong>Email:</strong> contact@cornucopiabio.com</p>
-          <p><strong>Phone:</strong> (123) 456-7890</p>
-          <p><strong>Address:</strong> 123 Science Way, Biotech City, USA</p>
+          <p><strong>Email:</strong> cornucopia.bio.ai@gmail.com</p>
+          <p><strong>Phone:</strong> (323) 398-9379</p>
         </div>
 
         {/* Right Column: Form */}
