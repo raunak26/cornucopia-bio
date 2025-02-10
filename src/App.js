@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 
 // Import your sections/pages
 import Home from './components/home/home';
@@ -34,13 +35,9 @@ function App() {
           />
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/contact" element={<ContactUs />} />
-
-          {/* 
-            OPTIONAL: A catch-all route if needed:
-            <Route path="*" element={<NotFound />} />
-          */}
         </Routes>
       </div>
+      <Analytics />
     </Router>
   );
 }
