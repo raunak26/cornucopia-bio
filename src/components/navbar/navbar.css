@@ -131,7 +131,7 @@
 
     /* Show menu when active */
     .nav-links.active {
-        height: 120px; /* Adjust based on content */
+        height: auto;
         padding: 1rem 0;
     }
 }
