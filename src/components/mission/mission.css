@@ -101,6 +101,26 @@
   
   .cta-button:hover {
     background: #003366;
+    transform: scale(1.05);
+  }
+
+  .paper-button {
+    display: inline-block;
+    background-color: #205EA3; /* Your brand blue */
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px; /* Rounded edges */
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    text-align: center;
+  }
+  
+  /* Hover effect */
+  .paper-button:hover {
+    background-color: #003366; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight pop-out effect */
   }
   
   /* Basic Responsive Tweaks */
@@ -112,6 +132,10 @@
     .mission-text-block p,
     .mission-cta p {
       font-size: 0.95rem;
+    }
+    .paper-button {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
     }
   }
   

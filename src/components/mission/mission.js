@@ -56,8 +56,8 @@ const Mission = () => {
             results, all without requiring specialized coding skills.
           </p>
           <blockquote className="paper-quote">
-            <a href="/file.pdf" target="_blank" rel="noopener noreferrer">
-              Check out our paper on GLP-1 here
+            <a href="/file.pdf" target="_blank" rel="noopener noreferrer" className="paper-button">
+              Click here to check out our paper
             </a>
           </blockquote>
         </div>
