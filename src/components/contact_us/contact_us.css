@@ -155,3 +155,27 @@
     margin-bottom: 1.5rem;
   }
 }
+/* Checkbox and radio buttons - clean alignment */
+.contact-form label input[type="checkbox"],
+.contact-form label input[type="radio"] {
+  margin-right: 0.6rem;
+  width: 16px;
+  height: 16px;
+}
+
+/* Flex layout for label + checkbox */
+.contact-form label {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem; /* add spacing above */
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+/* Optional: Group multiple checkboxes cleanly */
+.contact-form .form-check-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
