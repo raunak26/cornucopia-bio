@@ -30,3 +30,13 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 600px) {
+  .logo-container {
+   display: block;
+  }
+
+  #merck-logo {
+    margin-top: 53px;
+  }
+}
