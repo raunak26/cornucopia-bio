@@ -12,11 +12,7 @@ const SpinningWheel = () => {
     <section className="logo-section">
       <div className="logo-container">
         {logos.map((logo, index) => (
-          <div
-            key={index}
-            className="logo-item"
-            id={logo.name === "UC Davis" ? "ucdavis-logo" : undefined}
-          >
+          <div key={index} className="logo-item">
             <img src={logo.src} alt={`${logo.name} logo`} />
           </div>
         ))}
