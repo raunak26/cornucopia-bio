@@ -46,18 +46,18 @@ const Mission = () => {
           </p>
         </div>
 
-        {/* GLP-1 Paper Snippet */}
+        {/* Workflow Skipping Paper Snippet */}
         <div className="mission-text-block snippet-block">
-          <h2>Real-World Example: GLP-1</h2>
+          <h2>Agents That Skip the Busywork</h2>
           <p>
-            We’ve tested our approach on some of the hottest topics in science—like
-            <strong> GLP-1</strong>. Our agents rapidly reviewed current publications, 
-            planned experiments, and ran computational experiments to produce actionable 
-            results, all without requiring specialized coding skills.
+            Meet the future of lab work. Our agents have written, <strong>A Framework for Automated Assay Validation and Workflow Skipping</strong>, they don’t just assist — they <em>design</em> and <em>validate</em> entire workflows. Showing how we can eliminate redundant steps, accelerate diagnostics, and deliver results in a fraction of the time.
+          </p>
+          <p>
+            Even better? The entire paper was planned, written, and structured by our autonomous agents.
           </p>
           <blockquote className="paper-quote">
-            <a href="/file.pdf" target="_blank" rel="noopener noreferrer" className="paper-button">
-              Click here to check out our paper
+            <a href="/paper.pdf" target="_blank" rel="noopener noreferrer" className="paper-button">
+              Click here to read the paper
             </a>
           </blockquote>
         </div>
@@ -66,11 +66,6 @@ const Mission = () => {
       {/* Call to Action Section */}
       <section className="mission-cta">
         <h2>Ready to Bring Cornucopia to Your Lab?</h2>
-        <p>
-          Get in touch to see how our agent-driven platform can revolutionize 
-          your research. Experience faster experiments, automated ideation, 
-          and seamless lab integration—no code required.
-        </p>
         <a href="/contact" className="cta-button">
           Get in Touch
         </a>
