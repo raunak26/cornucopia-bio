@@ -2,7 +2,7 @@ import React from "react";
 import "./SpinningWheel.css";
 
 const logos = [
-  { name: "Amgen", src: "/logos/amgen.svg" },
+  { name: "Stanford", src: "/logos/stanford.png" },
   { name: "Merck", src: "/logos/merck.svg" },
   { name: "UC Davis", src: "/logos/ucdavis.svg" },
 ];
