@@ -8,6 +8,7 @@ import Mission from './components/mission/mission';
 import Benefits from './components/benefits/benefits';
 import ContactUs from './components/contact_us/contact_us';
 import Navbar from './components/navbar/navbar';
+import Services from './components/services/services';
 
 // AOS example
 import Aos from 'aos';
@@ -34,6 +35,7 @@ function App() {
           />
           <Route path="/benefits" element={<Benefits />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </div>
     </Router>
