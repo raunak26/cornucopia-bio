@@ -73,6 +73,16 @@
 .contact-info strong {
   color: #000;
 }
+/* contact.css (or wherever your styles live) */
+.contact-info a {
+  color: inherit;          /* keep same color as surrounding text */
+  text-decoration: none;   /* remove underline */
+}
+
+.contact-info a:hover,
+.contact-info a:focus {
+  text-decoration: underline;   /* add underline on hover for accessibility */
+}
 
 /* Right column: form card */
 .contact-form {
