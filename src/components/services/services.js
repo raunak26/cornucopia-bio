@@ -106,7 +106,7 @@ const Services = () => (
           receive results.
         </p>
         <p>
-          <strong>Project fee:</strong> from <span className="price">US$2,000</span> per engagement.
+          <strong>Project fee:</strong> <span className="price">US$2,000</span> per engagement (includeslive tracking & report delivery)
         </p>
         {/* BUY BUTTON */}
         <stripe-buy-button
