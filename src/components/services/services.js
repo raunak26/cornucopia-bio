@@ -69,6 +69,11 @@ const Services = () => (
           <strong>Flat fee:</strong> <span className="price">US$5,000 </span> (hardware maintenance or parts
           replacement not included).
         </p>
+        {/* BUY BUTTON */}
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RkAuNBwKVDwg9HZCKcRQXKc"
+          publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+        />
       </div>
 
       {/* NLP‑Driven Protocol Interface */}
@@ -84,6 +89,11 @@ const Services = () => (
           <strong>Flat fee:</strong> <span className="price">US$3,500</span> (excludes ongoing maintenance and
           data‑integration work).
         </p>
+        {/* BUY BUTTON */}
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RkAtJBwKVDwg9HZgkBj8bmw"
+          publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+        />
       </div>
 
       {/* Sample Tracking */}
@@ -96,8 +106,13 @@ const Services = () => (
           receive results.
         </p>
         <p>
-          <strong>Project fee:</strong> from <span className="price">US$2,000</span> per engagement.
+          <strong>Project fee:</strong> <span className="price">US$2,000</span> per engagement (includeslive tracking & report delivery)
         </p>
+        {/* BUY BUTTON */}
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RkB0wBwKVDwg9HZiB1CS0rS"
+          publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+        />
       </div>
     </section>
 
