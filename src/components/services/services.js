@@ -66,8 +66,8 @@ const Services = () => (
           Hamilton, Agilent, Opentrons, and other major platforms.
         </p>
         <p>
-          <strong>Flat fee:</strong> <span className="price">US$5,000 </span> (hardware maintenance or parts
-          replacement not included).
+          <strong>Flat fee:</strong> <span className="price">US$5,000 </span> (excludes hardware maintenance & parts
+          replacement)
         </p>
         {/* BUY BUTTON */}
         <stripe-buy-button
@@ -87,7 +87,7 @@ const Services = () => (
         </p>
         <p>
           <strong>Flat fee:</strong> <span className="price">US$3,500</span> (excludes ongoing maintenance and
-          data‑integration work).
+          data‑integration)
         </p>
         {/* BUY BUTTON */}
         <stripe-buy-button
@@ -106,7 +106,7 @@ const Services = () => (
           receive results.
         </p>
         <p>
-          <strong>Project fee:</strong> <span className="price">US$2,000</span> per engagement (includeslive tracking & report delivery)
+          <strong>Project fee:</strong> <span className="price">US$2,000</span> per engagement (includes live tracking & report delivery)
         </p>
         {/* BUY BUTTON */}
         <stripe-buy-button
