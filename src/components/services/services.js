@@ -120,12 +120,15 @@ const Services = () => (
     <section className="cta-section">
       <h2>Join Our Alpha</h2>
       <p>
-        Sign up today to automate your assays or revive your on‑prem robotics.
-        CornucopiaBio — the future of CROs.
+        Sign up today to automate your assays or revive your robotics.
       </p>
-      <Link to="/contact" className="cta-button" onClick={() => window.scrollTo(0, 0)}>
-        Apply for Alpha Access
-      </Link>
+      <stripe-buy-button
+        buy-button-id="buy_btn_1RkHiqBwKVDwg9HZcXcfRvUE"
+        publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+      />
+      <p className="mt-2 text-sm font-medium text-red-600">
+      Only <span className="underline">6&nbsp;spots&nbsp;left</span>!
+      </p>
     </section>
   </div>
 );
