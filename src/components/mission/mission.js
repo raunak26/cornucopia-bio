@@ -62,14 +62,6 @@ const Mission = () => {
           </blockquote>
         </div>
       </section>
-
-      {/* Call to Action Section */}
-      <section className="mission-cta">
-        <h2>Ready to Bring Cornucopia to Your Lab?</h2>
-        <a href="/contact" className="cta-button">
-          Get in Touch
-        </a>
-      </section>
     </div>
   );
 };

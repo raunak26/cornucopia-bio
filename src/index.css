@@ -1,14 +1,35 @@
+/* ────────────────────────────────────────── index.css ── */
+
+/* 1 ▪ Global variables */
+:root {
+  --nav-height: 74px;           /* adjust if your navbar is taller */
+}
+
+/* 2 ▪ Anchor offset so in-page links clear the fixed navbar */
+html { scroll-padding-top: var(--nav-height); }
+
+/* 3 ▪ Primary font – Sen variable font with sensible fallbacks */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Sen", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", sans-serif;
+  font-weight: 400;            /* Sen defaults to 400 */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
 }
 
+/* Make sure major section wrappers inherit Sen */
+.home-container,
+.mission-container { font-family: inherit; }
+
+/* Optional: give the first section a top-margin so it isn’t hidden
+   when the page first loads under a fixed header */
+.home-container,
+.mission-container:first-of-type { margin-top: var(--nav-height); }
+
+/* 4 ▪ Monospace for <code> elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

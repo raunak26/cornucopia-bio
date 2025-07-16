@@ -1,141 +1,122 @@
-/* mission.css */
 
-/* Layout container */
 .mission-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: 'Inter', sans-serif; /* or your preferred font */
-    color: #333;
-  }
-  
-  /* Hero / Intro */
-  .mission-hero {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .mission-hero h1 {
-    font-size: 2.2rem;
-    color: #205EA3;
-    margin-bottom: 1rem;
-  }
-  
-  .mission-hero p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  /* Main content section */
-  .mission-content {
-    margin-bottom: 3rem;
-  }
-  
-  .mission-text-block {
-    margin-bottom: 2rem;
-  }
-  
-  .mission-text-block h2 {
-    font-size: 1.5rem;
-    color: #205EA3;
-    margin-bottom: 0.75rem;
-  }
-  
-  .mission-text-block p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
-  /* Paper snippet styling */
-  .snippet-block {
-    background: #fafafa;
-    border-left: 4px solid #205EA3;
-    padding: 1rem 1.5rem;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  .paper-quote {
-    margin-top: 1rem;
-    font-style: italic;
-    color: #555;
-  }
-  
-  /* Call to Action */
-  .mission-cta {
-    text-align: center;
-    background: #f7f7f7;
-    padding: 2rem;
-    border-radius: 4px;
-  }
-  
-  .mission-cta h2 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #205EA3;
-  }
-  
-  .mission-cta p {
-    font-size: 1rem;
-    line-height: 1.5;
-    max-width: 600px;
-    margin: 0.5rem auto 2rem;
-    color: #555;
-  }
-  
-  /* CTA Button */
-  .cta-button {
-    display: inline-block;
-    background: #205EA3;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 0.8rem 1.4rem;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: #003366;
-    transform: scale(1.05);
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
+/* Hero / Intro */
+.mission-hero {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mission-hero h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+  color: #015be5;           /* brand blue */
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.mission-hero p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Main content section */
+.mission-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.mission-text-block h2 {
+  font-size: 1.5rem;
+  color: #015be5;
+  margin-bottom: 0.75rem;
+}
+
+.mission-text-block p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Paper snippet styling */
+.snippet-block {
+  background: #fafafa;
+  border-left: 4px solid #0575E6;
+  padding: 1rem 1.5rem;
+}
+
+/* Call-to-Action section */
+.mission-cta {
+  text-align: center;
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.mission-cta h2 {
+  font-size: clamp(1.5rem, 3vw + 1rem, 2.25rem);
+  margin-bottom: 1rem;
+  color: #0575E6;
+}
+
+/* CTA button (matches Home hero) */
+.cta-button {
+  display: inline-block;
+  background: #0575E6;
+  color: #fff;
+  padding: 0.9rem 2.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.cta-button:hover,
+.cta-button:focus {
+  background: #0042b0;
+  transform: scale(1.05);
+}
+
+/* Paper PDF button */
+.paper-button {
+  display: inline-block;
+  background: #0575E6;          /* ← add # */
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;        /* pill shape, same as CTA */
+  transition: background 0.2s ease, transform 0.2s ease;
+  text-align: center;
+}
+.paper-button:hover,
+.paper-button:focus {
+  background: #0042b0;          /* darker hover */
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .mission-hero h1 {
+    font-size: 1.8rem;
+  }
+  .mission-hero p,
+  .mission-text-block p,
+  .mission-cta p {
+    font-size: 0.95rem;
+  }
   .paper-button {
-    display: inline-block;
-    background-color: #205EA3; /* Your brand blue */
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px; /* Rounded edges */
-    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-    text-align: center;
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
   }
-  
-  /* Hover effect */
-  .paper-button:hover {
-    background-color: #003366; /* Darker blue on hover */
-    transform: scale(1.05); /* Slight pop-out effect */
-  }
-  
-  /* Basic Responsive Tweaks */
-  @media (max-width: 768px) {
-    .mission-hero h1 {
-      font-size: 1.8rem;
-    }
-    .mission-hero p,
-    .mission-text-block p,
-    .mission-cta p {
-      font-size: 0.95rem;
-    }
-    .paper-button {
-      font-size: 0.9rem;
-      padding: 0.6rem 1.2rem;
-    }
-  }
-  
+}
