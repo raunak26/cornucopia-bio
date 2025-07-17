@@ -5,12 +5,8 @@ import "./services.css"; // reuse or extend your existing CSS
 const Services = () => (
   <div className="services-page">
     {/* Hero */}
-    <section className="hero-section">
-      <h1>Our Services</h1>
-      <p>
-        Robotic assays, AI‑written protocols, and on‑prem automation — now
-        available in our early‑access alpha.
-      </p>
+    <section>
+      <h5>.       .</h5>
     </section>
 
     {/* Assay Services */}
@@ -26,6 +22,11 @@ const Services = () => (
         <p className="turnaround">
           <span className="highlight">1 Week Turnaround</span>
         </p>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RkHiqBwKVDwg9HZcXcfRvUE"
+          publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+        >
+        </stripe-buy-button>
       </div>
 
       {/* qPCR / dPCR / ddPCR */}
@@ -39,19 +40,28 @@ const Services = () => (
         <p className="turnaround">
           <span className="highlight">1 Week Turnaround</span>
         </p>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RkHiqBwKVDwg9HZcXcfRvUE"
+          publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+        >
+        </stripe-buy-button>
       </div>
 
       {/* Multiomics */}
       <div className="service-item">
         <h2>Multiomics Workflows</h2>
         <p>
-          End‑to‑end automation for RNA‑seq, spatial omics, single‑cell and
-          single‑nuclei prep, plus AI‑powered image segmentation on pre‑stained
-          or in‑house‑stained samples.
+          End‑to‑end automation for RNA‑seq, spatial omics, single‑cell and single‑nuclei prep, 
+          plus batch tracking support, and AI‑powered image segmentation on pre‑stained or unstained samples.
         </p>
         <p className="turnaround">
           <span className="highlight">1 Week Turnaround</span>
         </p>
+        <stripe-buy-button
+          buy-button-id="buy_btn_1RkHiqBwKVDwg9HZcXcfRvUE"
+          publishable-key="pk_live_51Qu1DPBwKVDwg9HZWrqsj3yvMZ126yG9gRvXhzZj7rwlTMIdJSxou8y5WnDow1NN20Oq4QEPs0ytIHIVCCl6DQl900k64Hdcgk"
+        >
+        </stripe-buy-button>
       </div>
     </section>
 

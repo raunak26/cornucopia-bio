@@ -84,7 +84,15 @@
   flex-shrink: 0;
   transition: box-shadow 0.2s ease;
 }
-
+.timeline-step.highlight {
+  min-width: 160px;
+  min-height: 8px;
+  padding: 1.2rem 1rem;
+  background: #205EA3 !important;
+  color: #fff !important;
+  font-size: 1.05rem;
+  border: none;
+}
 .timeline-step:hover {
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
