@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ThemeProvider } from './context/ThemeContext';
 //INject APollo
 // ✅ Apollo script injection
 const initApollo = () => {
@@ -27,7 +28,10 @@ initApollo();
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      {/* Wrap your App with ThemeProvider */}
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
