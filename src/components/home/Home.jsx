@@ -16,7 +16,7 @@ const Home = () => {
         </p>
         <div className="mt-8">
           <a
-            href="/contact"
+            href="/services"
             className="inline-block bg-primary text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 dark:hover:bg-blue-600 transition"
           >
             Get Started
@@ -44,7 +44,7 @@ const Home = () => {
               <img src={deviceIcon} alt="Device" className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-primary mb-2">Device Integrations</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Connect to real lab hardware like pipetting robots or thermal cyclers, and execute validated protocols without writing code.
+                Connect to real lab hardware like liquid handlers and thermal cyclers, and execute validated protocols without writing code.
               </p>
             </div>
           </div>

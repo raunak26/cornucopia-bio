@@ -1,7 +1,7 @@
 import React from "react";
 
 const logos = [
-  { name: "Amgen", src: "/logos/amgen.svg" },
+  // { name: "Amgen", src: "/logos/amgen.svg" },
   { name: "Microsoft", src: "/logos/Microsoft.svg" },
   { name: "UC Davis", src: "/logos/uc_davis.svg" },
   { name: "Merck", src: "/logos/merck.svg" },
