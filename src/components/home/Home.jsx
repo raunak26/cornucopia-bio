@@ -1,6 +1,7 @@
 import React from "react";
 import reportIcon from "../Images/report.svg";
 import deviceIcon from "../Images/Labdevice.png";
+import SpinningWheel from "../SpinningWheel/SpinningWheel";
 
 const Home = () => {
   return (
@@ -52,12 +53,11 @@ const Home = () => {
 
       {/* Trusted by */}
       <section className="py-16 px-6 text-center">
-        <h2 className="text-xl font-medium text-primary mb-4">Trusted by researchers at</h2>
-        <div className="w-full h-24 bg-gray-100 dark:bg-gray-800 rounded-lg flex items-center justify-center text-gray-500 dark:text-gray-400">
-          [ SpinningWheel or logo list placeholder ]
-        </div>
+        <h2 className="text-xl font-medium text-primary mb-6">
+          Built with insights from
+        </h2>
+        <SpinningWheel />
       </section>
-
     </div>
   );
 };
