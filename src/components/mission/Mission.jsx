@@ -16,7 +16,7 @@ const Mission = () => {
         <div>
           <h2 className="text-xl font-semibold text-primary mb-2 dark:text-blue-400">The Problem</h2>
           <p className="text-gray-600 leading-relaxed dark:text-gray-300">
-            Automation helps, but most scientists can’t just buy a Hamilton STAR and go. You need a coder. You need specialized scripting. You need protocols. And before that? You need a full literature review to even know what to run.
+            Automation helps, but most scientists can’t just buy a liquid handler and go. You need a coder. You need specialized scripting. You need protocols. And before that? You need a full literature review to even know what to run.
           </p>
         </div>
 
