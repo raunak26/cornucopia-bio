@@ -3,12 +3,13 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import your sections/pages
-import Home from './components/home/home';
-import Mission from './components/mission/mission';
-import Benefits from './components/benefits/benefits';
-import ContactUs from './components/contact_us/contact_us';
-import Navbar from './components/navbar/navbar';
-import Services from './components/services/services';
+import Home from './components/home/Home';
+import Mission from './components/mission/Mission';
+import Benefits from './components/benefits/Benefits';
+import ContactUs from './components/contact_us/ContactUs';
+import Navbar from './components/navbar/Navbar';
+import Services from './components/services/Services';
+import Footer from './components/footer/Footer';
 
 // AOS example
 import Aos from 'aos';
@@ -38,6 +39,7 @@ function App() {
           <Route path="/services" element={<Services />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
